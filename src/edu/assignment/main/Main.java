@@ -1,4 +1,4 @@
-package edu.assignment.algorithm;
+package edu.assignment.main;
 
 // Import used frameworks for the Main program here
 import java.util.Scanner;
@@ -10,8 +10,6 @@ import java.io.FileReader;
 
 public class Main {
 
-	
-	
 	public static void main (String[] args) {
 		
 		// Initialization of variables
@@ -115,42 +113,40 @@ public class Main {
 			System.out.println("(3) Algorithm 3");
 			System.out.println("(4) Algorithm 4");
 			switch (scanner.nextLine().toUpperCase()){
-			case "1": {
-				System.out.println("execute algorithm 1");
-				// algorithm 1 here
-				break;
-
+				case "1": {
+					System.out.println("execute algorithm 1");
+					// algorithm 1 here
+					break;
+	
+				}
+				case "2": {
+					System.out.println("execute algorithm 2");
+					// algorithm 2 here
+					break;
+	
+				}
+				case "3": {
+					System.out.println("execute algorithm 3");
+					// algorithm 3 here
+					break;
+	
+				}
+				case "4": {
+					System.out.println("execute algorithm 4");
+					// algorithm 4 here
+					break;
+	
+				}
+				case "B" , "Q": {
+					break;
+				}
+				default: {
+					System.out.println("Invalid choice");	
+					choosingAlgorithm = false;
+					break;
+				}
 			}
-			case "2": {
-				System.out.println("execute algorithm 2");
-				// algorithm 2 here
-				break;
-
-			}
-			case "3": {
-				System.out.println("execute algorithm 3");
-				// algorithm 3 here
-				break;
-
-			}
-			case "4": {
-				System.out.println("execute algorithm 4");
-				// algorithm 4 here
-				break;
-
-			}
-			case "B" , "Q": {
-				break;
-			}
-			default: {
-				System.out.println("Invalid choice");	
-				choosingAlgorithm = false;
-				break;
-
-			}
-			}
-
 		}
 	}
-	}
+}
 
