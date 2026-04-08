@@ -3,8 +3,8 @@ package edu.assignment.main;
 // Import used frameworks for the Main program here
 import java.util.Scanner;
 import java.io.File;
-import java.io.FileReader;
-
+//import java.io.FileReader;
+import edu.assignment.algorithm.*;
 
 // Import the algorithm class here
 
@@ -44,6 +44,7 @@ public class Main {
 			case "2": {
 				System.out.println("random gen");
 				//random generation
+				fileGenerator.generateFile("randomfile.txt");
 				break;
 			}
 			case "Q": {
@@ -91,7 +92,7 @@ public class Main {
 		        scanner.nextLine();
 		        if (input == 0) return null;
 		        if (input > 0 && input <= listOfFiles.length) {
-			        File data = new File("src/edu/assignment/data/"+listOfFiles[input-1]);
+			        File data = listOfFiles[input-1];
 			        readingFile = false;
 			        return data;
 		        }
@@ -116,6 +117,7 @@ public class Main {
 				case "1": {
 					System.out.println("execute algorithm 1");
 					// algorithm 1 here
+					ShortestProcessNext.executeSPN(scanner, file);
 					break;
 	
 				}
